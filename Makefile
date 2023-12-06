@@ -21,3 +21,4 @@ help:
 
 # Copy the html to docs
 	cp -a "_build/html/." docs/
+	find docs/ -type f -not -path '*/\.*' -exec sed -i 's#_statics#docs/_statics#g' {} +
