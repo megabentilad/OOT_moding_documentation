@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installing and setting up WSL &mdash; OOT decomp moding Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Installing and setting up Visual Studio Code (VSC)" href="vscode.html" />
+    <link rel="prev" title="Initial Set-Up" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            OOT decomp moding Documentation
+              <img src="../_static/favicon-32x32.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Initial Set-Up</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Installing and setting up WSL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vscode.html">Installing and setting up Visual Studio Code (VSC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="initial_rom_edit.html">Initial ROM editing Set-Up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_setup.html">Advanced moding Set-Up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blender.html">Installation and configuration of Blender</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OOT decomp moding Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Initial Set-Up</a></li>
+      <li class="breadcrumb-item active">Installing and setting up WSL</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/setup/wsl.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installing-and-setting-up-wsl">
+<h1>Installing and setting up WSL<a class="headerlink" href="#installing-and-setting-up-wsl" title="Link to this heading"></a></h1>
+<p><strong>1.- Go to PowerShell by clicking on the bottom-left Windows icon, typing</strong> <em>power</em> <strong>, right-clicking to the first result and clicking in</strong> <em>Execute as administrator</em></p>
+<img alt="../_images/power.png" src="../_images/power.png" />
+<p><strong>2.- Once the blue terminal is oppened, write the command:</strong> <code class="docutils literal notranslate"><span class="pre">wsl</span> <span class="pre">--install</span> <span class="pre">-d</span> <span class="pre">Ubuntu</span></code></p>
+<img alt="../_images/wsl.png" src="../_images/wsl.png" />
+<p><strong>3.- Go to Windows tab, type:</strong> <em>Ubuntu</em> <strong>and open the first result</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first time you open Ubuntu it will ask you for a name and a password, <strong>PLEASE</strong> remember the password</p>
+</div>
+<p><strong>4.- Type in the Ubuntu terminal:</strong> <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span> <span class="pre">-y</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first time you execute a command starting with “sudo” it will ask for the password</p>
+</div>
+<p><strong>5.- Now some elements are needed so type:</strong> <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">git</span> <span class="pre">zip</span> <span class="pre">unzip</span> <span class="pre">jq</span> <span class="pre">build-essential</span> <span class="pre">binutils-mips-linux-gnu</span> <span class="pre">python3</span> <span class="pre">libpng-dev</span> <span class="pre">gcc-mips-linux-gnu</span> <span class="pre">-y</span></code></p>
+<p><strong>6.- Create a oot folder with:</strong> <code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">OOT</span></code></p>
+<p><strong>7.- Go inside the folder:</strong> <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">OOT</span></code></p>
+<p><strong>8.- Clone the repository:</strong> <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/zeldaret/oot.git</span></code></p>
+<p><strong>9.- Enter inside the repository:</strong> <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">oot</span></code></p>
+<p><strong>10.- Download the baserom_original.z64 and copy it to the repository folder. Example:</strong> <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">/mnt/c/Users/megab/Desktop/baserom_original.z64</span> <span class="pre">.</span></code></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The name is important, the file <strong>has</strong> to be called <em>baserom_original.z64</em></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have an original copy of the game, you can pass the rom directly or find it in <em>Internet Archive</em>. You are looking for an unmodified mqdebug.z64 file</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To reach the PC files, you need to go to /mnt/<strong>[drive in lowercase]</strong>/<strong>[normal path to the file]</strong></p>
+</div>
+<p><strong>11.- Execute “make” command to set the environment up. You can add the</strong> “-j[number]” <strong>to set up the number of cores to use:</strong> <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">-j8</span> <span class="pre">setup</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can check your number of disponible cores with: <code class="docutils literal notranslate"><span class="pre">nproc</span></code></p>
+</div>
+<p><strong>12.- Execute simple “make” command to test the environment:</strong> <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">-j8</span></code></p>
+<p><strong>13.- If the last message is</strong> <em>“zelda_ocarina_mq_dbg.z64: OK”</em> <strong>everything is correctly setted up 😃</strong></p>
+<img alt="../_images/make.png" src="../_images/make.png" />
+<p><strong>14.- Close the terminal clicking in the top-right X</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Initial Set-Up" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="vscode.html" class="btn btn-neutral float-right" title="Installing and setting up Visual Studio Code (VSC)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, megabentilad.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

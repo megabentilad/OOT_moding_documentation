@@ -30,6 +30,7 @@ author = 'megabentilad'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -47,8 +48,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_theme = 'sphinx_pdj_theme'
-html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
+html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -57,5 +57,5 @@ html_static_path = ['_static']
 
 
 # My configuration
-html_favicon = 'images/html_favicon.png'
-html_logo = 'images/html_favicon.png'
+html_favicon = '_static/favicon-32x32.png'
+html_logo = '_static/favicon-32x32.png'

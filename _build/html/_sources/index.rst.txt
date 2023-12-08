@@ -1,19 +1,13 @@
-.. OOT decomp moding Documentation documentation master file, created by
-   sphinx-quickstart on Wed Dec  6 15:16:16 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to OOT decomp moding Documentation's documentation!
+Welcome to OOT decomp moding documentation!
 ===========================================================
 
+This documentation is a personal project that I'm doing to recopile as much information as possible about oot decomp moding so it's everithing here and easy find.
+
 .. toctree::
-   :maxdepth: 10
+   :maxdepth: 3
    :caption: Contents:
 
-   test
-   test2
-   test3
-   test4
+   setup/index
 
 Indices and tables
 ==================
