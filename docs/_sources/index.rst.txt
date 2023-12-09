@@ -8,6 +8,7 @@ This documentation is a personal project that I'm doing to recopile as much info
    :caption: Contents:
 
    setup/index
+   hotkeys/index
 
 Indices and tables
 ==================

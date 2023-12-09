@@ -30,7 +30,13 @@ author = 'megabentilad'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    
+    'sphinxcontrib.jquery',
+    'sphinx_copybutton'      # pip install sphinx-copybutton see https://sphinx-copybutton.readthedocs.io/en/latest/ 
+]
+# pip install sphinxcontrib-jquery -> Adds jquery to the project
+# pip install sphinx-copybutton -> Adds a github-style copy button to the code blocks
+html_js_files = [
+    'js/custom.js'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
