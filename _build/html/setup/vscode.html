@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Installing and setting up Visual Studio Code (VSC) &mdash; OOT decomp moding Documentation  documentation</title>
@@ -22,7 +22,7 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
         <script src="../_static/copybutton.js?v=f281be69"></script>
-        <script src="../_static/js/custom.js?v=3dd72203"></script>
+        <script src="../_static/js/custom.js?v=c7be3b50"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -80,7 +80,6 @@
           <li class="breadcrumb-item"><a href="index.html">Initial Set-Up</a></li>
       <li class="breadcrumb-item active">Installing and setting up Visual Studio Code (VSC)</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/setup/vscode.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -91,24 +90,25 @@
   <section id="installing-and-setting-up-visual-studio-code-vsc">
 <h1>Installing and setting up Visual Studio Code (VSC)<a class="headerlink" href="#installing-and-setting-up-visual-studio-code-vsc" title="Link to this heading"></a></h1>
 <p><strong>1.- Go to</strong> <a class="reference external" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>, <strong>download the las VScode version and install it</strong></p>
-<img alt="../_images/vscode-install.png" src="../_images/vscode-install.png" />
+<img alt="../_images/install.png" src="../_images/install.png" />
 <p><strong>2.- Open VSCode and, in the upper-left nav, click on the extensions section (4 squares)</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can click in the Windows icon and search for it typing “vscode”</p>
 </div>
-<img alt="../_images/vscode-extensions.png" src="../_images/vscode-extensions.png" />
+<img alt="../_images/extensions.png" src="../_images/extensions.png" />
 <p><strong>3.- Search for WSL and install the first option</strong></p>
-<img alt="../_images/vscode-wsl.png" src="../_images/vscode-wsl.png" />
+<img alt="../_images/wsl1.png" src="../_images/wsl1.png" />
 <p><strong>4.- Close it</strong></p>
 <p><strong>5.- Open the wls Ubuntu terminal</strong></p>
 <p><strong>6.- Go to the repository folder:</strong> <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">OOT/oot</span></code></p>
 <p><strong>7.- Type</strong> <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">.</span></code> <strong>to open VSCode from that environment</strong></p>
-<img alt="../_images/vscode-wslopen.png" src="../_images/vscode-wslopen.png" />
+<img alt="../_images/wslopen.png" src="../_images/wslopen.png" />
 <p><strong>8.- Go to the extensions section, search for C/C++ Extension Pack and install it</strong></p>
-<img alt="../_images/vscode-c.png" src="../_images/vscode-c.png" />
+<img alt="../_images/c.png" src="../_images/c.png" />
 <p><strong>9.- Having all of that done, copy the content of this git file</strong> <a class="reference external" href="https://gist.github.com/krm01/7345ca80e0e7f6b083a0ea4e85515d4b">https://gist.github.com/krm01/7345ca80e0e7f6b083a0ea4e85515d4b</a></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="c1">//(Content from 01/12/2023)</span>
+<details class="summary-b-git-file-b">
+<summary><b>Git file</b></summary><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="c1">//(Content from 01/12/2023)</span>
 <span class="p">{</span>
 <span class="w">   </span><span class="nt">&quot;configurations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">      </span><span class="p">{</span>
@@ -135,6 +135,9 @@
 <span class="w">   </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
 <span class="p">}</span>
 </pre></div>
+</div>
+</details><div class="line-block">
+<div class="line"><br /></div>
 </div>
 <p><strong>10.- Go to VSCode and press</strong> <em>Ctrl+N</em> <strong>to open a new file</strong></p>
 <p><strong>11.- Copy the content of the file there and save the file in</strong> <em>/home/mega/OOT/oot/.vscode/c_cpp_properties.json</em></p>

@@ -31,10 +31,12 @@ author = 'megabentilad'
 # ones.
 extensions = [
     'sphinxcontrib.jquery',
-    'sphinx_copybutton'      # pip install sphinx-copybutton see https://sphinx-copybutton.readthedocs.io/en/latest/ 
+    'sphinx_copybutton',
+    'sphinx_toolbox.collapse'
 ]
 # pip install sphinxcontrib-jquery -> Adds jquery to the project
 # pip install sphinx-copybutton -> Adds a github-style copy button to the code blocks
+# pip install sphinx_toolbox -> Adds a bunch of usefull options
 html_js_files = [
     'js/custom.js'
 ]
@@ -66,3 +68,4 @@ html_static_path = ['_static']
 # My configuration
 html_favicon = '_static/favicon-32x32.png'
 html_logo = '_static/favicon-32x32.png'
+html_show_sourcelink = False

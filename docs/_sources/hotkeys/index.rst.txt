@@ -7,4 +7,5 @@ Hot-keys help for all the tools
 
    vscode-hotkeys
    blender-hotkeys
+   git-hotkeys
    

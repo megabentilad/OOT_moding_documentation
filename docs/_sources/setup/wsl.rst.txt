@@ -3,11 +3,11 @@ Installing and setting up WSL
 
 **1.- Go to PowerShell by clicking on the bottom-left Windows icon, typing** *power* **, right-clicking to the first result and clicking in** *Execute as administrator*
 
-.. image:: ../images/setup/power.png
+.. image:: ../images/setup/wsl/power.png
 
 **2.- Once the blue terminal is oppened, write the command:** ``wsl --install -d Ubuntu``
 
-.. image:: ../images/setup/wsl.png
+.. image:: ../images/setup/wsl/wsl.png
 
 **3.- Go to Windows tab, type:** *Ubuntu* **and open the first result**
 
@@ -49,6 +49,6 @@ Installing and setting up WSL
 
 **13.- If the last message is** *“zelda_ocarina_mq_dbg.z64: OK”* **everything is correctly setted up 😃**
 
-.. image:: ../images/setup/make.png
+.. image:: ../images/setup/wsl/make.png
 
 **14.- Close the terminal clicking in the top-right X**

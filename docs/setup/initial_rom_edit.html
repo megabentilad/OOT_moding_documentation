@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Initial ROM editing Set-Up &mdash; OOT decomp moding Documentation  documentation</title>
@@ -22,7 +22,7 @@
         <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
         <script src="../_static/copybutton.js?v=f281be69"></script>
-        <script src="../_static/js/custom.js?v=3dd72203"></script>
+        <script src="../_static/js/custom.js?v=5906666c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -60,6 +60,7 @@
 <li class="toctree-l2"><a class="reference internal" href="blender.html">Installation and configuration of Blender</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../hotkeys/index.html">Hot-keys help for all the tools</a></li>
 </ul>
 
         </div>
@@ -79,7 +80,6 @@
           <li class="breadcrumb-item"><a href="index.html">Initial Set-Up</a></li>
       <li class="breadcrumb-item active">Initial ROM editing Set-Up</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/setup/initial_rom_edit.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -89,7 +89,39 @@
              
   <section id="initial-rom-editing-set-up">
 <h1>Initial ROM editing Set-Up<a class="headerlink" href="#initial-rom-editing-set-up" title="Link to this heading"></a></h1>
-<p>TODO</p>
+<p><strong>1.- In VSCode press</strong> <em>Ctrl+P</em> <strong>to search for a file in the environment. Search for</strong> <code class="docutils literal notranslate"><span class="pre">rom_headers.s</span></code> <strong>and open it</strong></p>
+<img alt="../_images/header.png" src="../_images/header.png" />
+<p><strong>2.- Change the region from “P” to “E” and press</strong> <em>Ctrl+S</em> <strong>to save the changes</strong></p>
+<img alt="../_images/region.png" src="../_images/region.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>P</strong> is PAL and <strong>E</strong> is NTSC (PAL runs at 16 fps and NTSC runs at 20 fps)</p>
+</div>
+<p><strong>3.- Press again</strong> <em>Ctrl+P</em>, <strong>search</strong> <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> <strong>and open it</strong></p>
+<p><strong>4.- Modify lines 10, 12 and 16 as shown in the image</strong></p>
+<img alt="../_images/compiler.png" src="../_images/compiler.png" />
+<p><strong>5.- Modify</strong> <em>all:</em> <strong>section to add a destination folder where save the modified rom when compiled</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can find <em>all</em> section by pressing <em>Ctrl+F</em> and searching for <code class="docutils literal notranslate"><span class="pre">all:</span></code></p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span><span class="k">$(</span>ROM<span class="k">)</span><span class="w"> </span>/mnt/c/Users/megab/Desktop/
+</pre></div>
+</div>
+<img alt="../_images/cp_rom.png" src="../_images/cp_rom.png" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You need to use <strong>tabulations</strong> in this file. If you use spaces, it will fail</p>
+</div>
+<dl class="simple">
+<dt><strong>6.- Solve opening in-game menu crash in emulator.</strong></dt><dd><ul class="simple">
+<li><p><strong>1.- Press</strong> <em>Ctrl+P</em> <strong>in VSCode, search for a file called</strong> <code class="docutils literal notranslate"><span class="pre">z_map_exp.c</span></code> <strong>and open it</strong></p></li>
+<li><p><strong>2.- Press</strong> <em>Ctrl+F</em> <strong>and search for</strong> <code class="docutils literal notranslate"><span class="pre">Minimap_Draw(</span></code></p></li>
+<li><p><strong>3.- Change the</strong> <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> <strong>in the first</strong> <em>if</em> <strong>statement with only</strong> <code class="docutils literal notranslate"><span class="pre">&lt;</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<img alt="../_images/solve_map.png" src="../_images/solve_map.png" />
 </section>
 
 
