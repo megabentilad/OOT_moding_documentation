@@ -21,4 +21,8 @@ help:
 
 # Copy the html to docs
 	cp -a "_build/html/." docs/
+
+# Create a secret file to tell github that it can use css under "_static" path	
+	touch docs/.nojekyll
+	
 #	find docs/ -type f -not -path '*/\.*' -exec sed -i 's#_static#docs/_static#g' {} +

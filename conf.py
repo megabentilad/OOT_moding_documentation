@@ -67,5 +67,5 @@ html_static_path = ['_static']
 
 # My configuration
 html_favicon = '_static/favicon-32x32.png'
-html_logo = '_static/favicon-32x32.png'
+html_logo = '_static/hm_logo.png'
 html_show_sourcelink = False

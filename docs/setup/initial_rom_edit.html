@@ -40,7 +40,7 @@
           
           <a href="../index.html" class="icon icon-home">
             OOT decomp moding Documentation
-              <img src="../_static/favicon-32x32.png" class="logo" alt="Logo"/>
+              <img src="../_static/hm_logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -61,6 +61,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../hotkeys/index.html">Hot-keys help for all the tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References and external links</a></li>
 </ul>
 
         </div>
@@ -114,7 +115,7 @@
 <p>You need to use <strong>tabulations</strong> in this file. If you use spaces, it will fail</p>
 </div>
 <dl class="simple">
-<dt><strong>6.- Solve opening in-game menu crash in emulator.</strong></dt><dd><ul class="simple">
+<dt><strong>6.- Solve opening in-game menu crash in emulator</strong></dt><dd><ul class="simple">
 <li><p><strong>1.- Press</strong> <em>Ctrl+P</em> <strong>in VSCode, search for a file called</strong> <code class="docutils literal notranslate"><span class="pre">z_map_exp.c</span></code> <strong>and open it</strong></p></li>
 <li><p><strong>2.- Press</strong> <em>Ctrl+F</em> <strong>and search for</strong> <code class="docutils literal notranslate"><span class="pre">Minimap_Draw(</span></code></p></li>
 <li><p><strong>3.- Change the</strong> <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> <strong>in the first</strong> <em>if</em> <strong>statement with only</strong> <code class="docutils literal notranslate"><span class="pre">&lt;</span></code></p></li>
@@ -122,6 +123,23 @@
 </dd>
 </dl>
 <img alt="../_images/solve_map.png" src="../_images/solve_map.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>EXTRA: Dedicate more memory to show link holding item models</strong></p>
+<p>This step is <strong>comletly optional</strong> and it will only be useful if, in the future, you want to model an obtainable item wich size is greater than the maxumum <strong>(12Kb)</strong></p>
+<p>What we are going to do is increase that maximum size to <strong>44Kb</strong> and this should not have any negative impact in the game (at least in emulator)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The models that I’m talking about is the ones that are used when link gets a new item (geting kokiri sword from the chest and having it rotate over links hands)</p>
+</div>
+<ul class="simple">
+<li><p><strong>1.- Press</strong> <em>Ctrl+P</em> <strong>in VSCode, search for a file called</strong> <code class="docutils literal notranslate"><span class="pre">z_player.c</span></code> <strong>and open it</strong></p></li>
+<li><p><strong>2.- Press</strong> <em>Ctrl+F</em> <strong>and search for</strong> <code class="docutils literal notranslate"><span class="pre">malloc</span></code></p></li>
+<li><p><strong>3.- Change the</strong> <code class="docutils literal notranslate"><span class="pre">0x3008</span></code> <strong>inside the parentesis with</strong> <code class="docutils literal notranslate"><span class="pre">0xB008</span></code></p></li>
+</ul>
+<img alt="../_images/model_size.png" src="../_images/model_size.png" />
 </section>
 
 
