@@ -1,12 +1,12 @@
 References and external links
 ==============================
 
-Hylian Moding web Page
+Hylian Modding web Page
 --------------------------
 
 * `https://hylianmodding.com/mods <https://hylianmodding.com/mods>`_
 
-Hylian Moding Discord
+Hylian Modding Discord
 -------------------------------
 
 * `https://discord.com/invite/nGFZ394 <https://discord.com/invite/nGFZ394>`_

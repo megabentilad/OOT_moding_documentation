@@ -10,3 +10,4 @@ Initial Set-Up
    initial_rom_edit
    advanced_setup
    blender
+   emulators

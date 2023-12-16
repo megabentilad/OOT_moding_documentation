@@ -83,4 +83,5 @@ To save this configuration you can do 2 things:
       #. Click on **File** in the upper-left corner of Blender
       #. Hover **Defaults** at the bottom of the dropdown
       #. Click on **Save Startup File**
+      #. Click again on **Save Startup File**
       #. Next time you open blender, you will have every configured

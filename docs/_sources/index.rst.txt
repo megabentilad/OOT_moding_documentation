@@ -8,14 +8,15 @@ This documentation is a personal project that I'm doing to recopile as much info
    :caption: Contents:
 
    setup/index
+   modding/index
    hotkeys/index
    references
 
 References and external links
 ==============================
 
-* `Hylian Moding <https://hylianmodding.com/mods>`_
-* `Hylian Moding Discord <https://discord.com/invite/nGFZ394>`_
+* `Hylian Modding <https://hylianmodding.com/mods>`_
+* `Hylian Modding Discord <https://discord.com/invite/nGFZ394>`_
 * `Fast64 Repository <https://github.com/Fast-64/fast64>`_
 * `Kenton tutorials (The main reference for this documentation) <https://www.youtube.com/watch?v=L9qYXPegeHU&list=PLXrU-ldZwy9WdEaJG0YWsSP0kIG-qxwfU&pp=iAQB>`_
 * `Visual Studio Code <https://code.visualstudio.com/>`_
